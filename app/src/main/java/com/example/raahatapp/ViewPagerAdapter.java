@@ -1,7 +1,6 @@
-package com.example.myapplication;
+package com.example.raahatapp;
 
 import android.content.Context;
-import android.media.Image;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -12,9 +11,7 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.viewpager.widget.PagerAdapter;
 
-import com.example.myapplication.R;
-
-import kotlin.io.LineReader;
+import com.example.raahatapp.R;
 
 public class ViewPagerAdapter extends PagerAdapter {
 

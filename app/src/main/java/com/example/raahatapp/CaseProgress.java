@@ -1,14 +1,14 @@
-package com.example.myapplication;
+package com.example.raahatapp;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-public class KnowYourRightsChatbot extends AppCompatActivity {
+public class CaseProgress extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_know_your_rights_chatbot);
+        setContentView(R.layout.activity_case_progress);
     }
 }

@@ -1,4 +1,4 @@
-package com.example.myapplication;
+package com.example.raahatapp;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -7,7 +7,6 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.ImageButton;
 
 public class PaidLawyers extends AppCompatActivity {
 

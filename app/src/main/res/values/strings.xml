@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">My Application</string>
+    <string name="app_name">RaahatApp</string>
     <string name="screen_description">OnboardingScreen</string>
     <string name="splash_screen_name">RAAHAT</string>
     <string name="splash_screen_tagline">Your Legal Ally</string>

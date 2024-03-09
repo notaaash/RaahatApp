@@ -1,4 +1,4 @@
-package com.example.myapplication;
+package com.example.raahatapp;
 
 import android.os.Bundle;
 
@@ -8,13 +8,12 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.view.View;
 
-import androidx.core.view.WindowCompat;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
 
-import com.example.myapplication.databinding.ActivityRehabBinding;
+import com.example.raahatapp.databinding.ActivityRehabBinding;
 
 public class Rehab extends AppCompatActivity {
 
