@@ -21,7 +21,7 @@ public class LegalAidClinics extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 // TODO Auto-generated method stub
-                String url = "http://www.google.com";
+                String url = "https://thecommonwealth.org/";
 
                 Intent i = new Intent(Intent.ACTION_VIEW);
                 i.setData(Uri.parse(url));
@@ -35,7 +35,7 @@ public class LegalAidClinics extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 // TODO Auto-generated method stub
-                String url = "http://www.google.com";
+                String url = "https://i-probono.com/";
 
                 Intent i = new Intent(Intent.ACTION_VIEW);
                 i.setData(Uri.parse(url));
@@ -49,7 +49,7 @@ public class LegalAidClinics extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 // TODO Auto-generated method stub
-                String url = "http://www.google.com";
+                String url = "https://reproductiverights.hrln.org/";
 
                 Intent i = new Intent(Intent.ACTION_VIEW);
                 i.setData(Uri.parse(url));
@@ -63,7 +63,7 @@ public class LegalAidClinics extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 // TODO Auto-generated method stub
-                String url = "http://www.google.com";
+                String url = "https://nalsa.gov.in/";
 
                 Intent i = new Intent(Intent.ACTION_VIEW);
                 i.setData(Uri.parse(url));
