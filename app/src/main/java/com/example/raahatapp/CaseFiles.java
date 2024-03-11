@@ -21,4 +21,14 @@ public class CaseFiles extends AppCompatActivity {
         WebSettings webSettings = webView.getSettings();
         webSettings.setJavaScriptEnabled(true);
     }
+
+    @Override
+    public void onBackPressed(){
+        if (webView.canGoBack()){
+            webView.goBack();
+        }
+        else{
+            super.onBackPressed();
+        }
+    }
 }
