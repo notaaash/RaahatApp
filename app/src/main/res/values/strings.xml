@@ -87,6 +87,14 @@
     <string name="court">Court</string>
     <string name="title_activity_maps">MapsActivity</string>
     <string name="skip">Skip</string>
+    <string name="profiletop">Profile</string>
+    <string-array name="genderdropdown">
+        <item>Male</item>
+        <item>Female</item>
+        <item>Other</item>
+        <item>Prefer not to say</item>
+    </string-array>
+
 
 
 </resources>

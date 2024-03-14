@@ -47,6 +47,11 @@ dependencies {
     implementation("com.google.android.gms:play-services-maps:18.2.0")
     implementation("com.google.firebase:firebase-analytics")
     implementation(platform("com.google.firebase:firebase-bom:32.7.4"))
+    //ChatGPT dependencies
+    implementation ("com.android.volley:volley:1.2.1")
+
+    implementation ("com.squareup.okhttp3:okhttp:4.9.0")
+
     // Maps SDK for Android
     implementation("com.google.android.gms:play-services-maps:18.2.0")
     testImplementation("junit:junit:4.13.2")
