@@ -1,20 +1,402 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SettingsSection"
-    android:background="@drawable/app_background_gradient">
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".SettingsSection">
 
-    <TextView
-        android:id="@+id/textView11"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="SettingsSection"
-        android:textSize="48sp"
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" >
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="4dp"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:layout_editor_absoluteX="0dp">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:padding="10dp"
+                    android:src="@drawable/baseline_back_24"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centreInParent="true"
+                    android:layout_marginTop="10dp"
+                    android:text="Settings"
+                    android:textColor="#000000"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="50dp"
+                    android:src="@drawable/profile_img"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+
+                    android:text="Aman Dhomne"
+                    android:textColor="#000000"
+                    android:textSize="22sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    tools:layout_editor_absoluteY="160dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    tools:layout_editor_absoluteX="16dp"
+                    tools:layout_editor_absoluteY="190dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="+91 8815371060"
+                        android:textColor="#CC000000"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:layout_width="100dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginEnd="30dp"
+                        android:background="@drawable/round_back_night_mode"
+                        android:text="Edit Profile"
+                        android:textAllCaps="false"
+                        android:textColor="@color/primary" />
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginTop="48dp"
+                            android:layout_marginEnd="20dp"
+                            android:background="@drawable/round_back_layout"
+                            android:backgroundTint="#F69575"
+                            android:orientation="vertical"
+                            android:padding="40dp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.0"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent">
+
+                            <androidx.constraintlayout.widget.ConstraintLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:id="@+id/textView11"
+                                    layout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="61dp"
+                                    android:layout_marginTop="18dp"
+                                    android:text="Night Mode"
+                                    android:textColor="#FFFFFF"
+                                    android:textStyle="bold"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent" />
+
+                                <androidx.appcompat.widget.SwitchCompat
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="102dp"
+                                    android:layout_marginTop="3dp"
+                                    android:minWidth="50dp"
+                                    android:theme="@style/nightModeSwitch"
+                                    app:layout_constraintStart_toEndOf="@+id/textView11"
+                                    app:layout_constraintTop_toTopOf="parent" />
+
+                                <ImageView
+                                    android:id="@+id/nightModeIcon"
+                                    android:layout_width="40dp"
+                                    android:layout_height="40dp"
+                                    android:layout_marginTop="8dp"
+                                    android:padding="12dp"
+                                    android:src="@drawable/baseline_dark_mode_24"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent" />
+
+                                <!---notificaton icon -->
+
+                            </androidx.constraintlayout.widget.ConstraintLayout>
+
+                            <androidx.constraintlayout.widget.ConstraintLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <ImageView
+                                    android:id="@+id/notificationIcon"
+                                    android:layout_width="40dp"
+                                    android:layout_height="40dp"
+                                    android:padding="12dp"
+                                    android:src="@drawable/baseline_notifications_24"
+                                    tools:layout_editor_absoluteY="18dp" />
+
+                                <TextView
+                                    android:id="@+id/textView11"
+                                    layout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Notifications"
+                                    android:textColor="#FFFFFF"
+                                    android:textStyle="bold"
+                                    tools:layout_editor_absoluteX="60dp"
+                                    tools:layout_editor_absoluteY="30dp" />
+
+                                <androidx.appcompat.widget.SwitchCompat
+
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="95dp"
+                                    android:layout_marginTop="10dp"
+                                    android:minWidth="50dp"
+                                    android:theme="@style/nightModeSwitch"
+                                    app:layout_constraintStart_toEndOf="@+id/textView11"
+                                    app:layout_constraintTop_toTopOf="parent" />
+                            </androidx.constraintlayout.widget.ConstraintLayout>
+
+                            <androidx.constraintlayout.widget.ConstraintLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <ImageView
+                                    android:id="@+id/privateAccountIcon"
+                                    android:layout_width="40dp"
+                                    android:layout_height="40dp"
+                                    android:padding="12dp"
+                                    android:src="@drawable/baseline_privacy_tip_24"
+                                    tools:layout_editor_absoluteY="18dp" />
+
+                                <TextView
+                                    android:id="@+id/textView11"
+                                    layout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Private Account"
+                                    android:textColor="#FFFFFF"
+                                    android:textStyle="bold"
+                                    tools:layout_editor_absoluteX="60dp"
+                                    tools:layout_editor_absoluteY="30dp" />
+
+                                <androidx.appcompat.widget.SwitchCompat
+
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="74dp"
+                                    android:layout_marginTop="10dp"
+                                    android:minWidth="50dp"
+                                    android:theme="@style/nightModeSwitch"
+                                    app:layout_constraintStart_toEndOf="@+id/textView11"
+                                    app:layout_constraintTop_toTopOf="parent" />
+                            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                        </LinearLayout>
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginTop="50dp"
+                            android:layout_marginEnd="20dp"
+                            android:background="@drawable/round_back_layout"
+                            android:backgroundTint="#F69575"
+                            android:orientation="vertical"
+                            android:padding="40dp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent">
+
+                            <androidx.constraintlayout.widget.ConstraintLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:id="@+id/textView11"
+                                    layout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="61dp"
+                                    android:layout_marginTop="18dp"
+                                    android:text="General"
+                                    android:textColor="#FFFFFF"
+                                    android:textStyle="bold"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent" />
+
+                                <ImageView
+                                    android:id="@+id/nightModeIcon"
+                                    android:layout_width="40dp"
+                                    android:layout_height="40dp"
+                                    android:layout_marginTop="8dp"
+                                    android:padding="12dp"
+                                    android:src="@drawable/baseline_settings_24"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent" />
+
+
+
+
+                            </androidx.constraintlayout.widget.ConstraintLayout>
+
+                            <androidx.constraintlayout.widget.ConstraintLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <ImageView
+                                    android:id="@+id/notificationIcon"
+                                    android:layout_width="40dp"
+                                    android:layout_height="40dp"
+                                    android:padding="12dp"
+                                    android:src="@drawable/baseline_language_24"
+                                    tools:layout_editor_absoluteY="18dp" />
+
+                                <TextView
+                                    android:id="@+id/textView11"
+                                    layout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="App language"
+                                    android:textColor="#FFFFFF"
+                                    android:textStyle="bold"
+                                    tools:layout_editor_absoluteX="60dp"
+                                    tools:layout_editor_absoluteY="30dp" />
+
+
+                            </androidx.constraintlayout.widget.ConstraintLayout>
+
+                            <androidx.constraintlayout.widget.ConstraintLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <ImageView
+                                    android:id="@+id/privateAccountIcon"
+                                    android:layout_width="40dp"
+                                    android:layout_height="40dp"
+                                    android:padding="12dp"
+                                    android:src="@drawable/baseline_person_outline_24"
+                                    tools:layout_editor_absoluteY="18dp" />
+
+                                <TextView
+                                    android:id="@+id/textView11"
+                                    layout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="CNR no."
+                                    android:textColor="#FFFFFF"
+                                    android:textStyle="bold"
+                                    tools:layout_editor_absoluteX="60dp"
+                                    tools:layout_editor_absoluteY="30dp" />
+
+
+                            </androidx.constraintlayout.widget.ConstraintLayout>
+
+                            <androidx.constraintlayout.widget.ConstraintLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <ImageView
+                                    android:id="@+id/notificationIcon"
+                                    android:layout_width="40dp"
+                                    android:layout_height="40dp"
+                                    android:padding="12dp"
+                                    android:src="@drawable/baseline_data_usage_24"
+                                    tools:layout_editor_absoluteY="18dp" />
+
+                                <TextView
+                                    android:id="@+id/textView11"
+                                    layout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Data &amp; Storage"
+                                    android:textColor="#FFFFFF"
+                                    android:textStyle="bold"
+                                    tools:layout_editor_absoluteX="60dp"
+                                    tools:layout_editor_absoluteY="30dp" />
+
+
+                            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                            <androidx.constraintlayout.widget.ConstraintLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <ImageView
+                                    android:id="@+id/privateAccountIcon"
+                                    android:layout_width="40dp"
+                                    android:layout_height="40dp"
+                                    android:padding="12dp"
+                                    android:src="@drawable/baseline_address"
+                                    tools:layout_editor_absoluteY="18dp" />
+
+                                <TextView
+                                    android:id="@+id/textView11"
+                                    layout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="CNR no."
+                                    android:textColor="#FFFFFF"
+                                    android:textStyle="bold"
+                                    tools:layout_editor_absoluteX="60dp"
+                                    tools:layout_editor_absoluteY="30dp" />
+
+
+                            </androidx.constraintlayout.widget.ConstraintLayout>
+
+                        </LinearLayout>
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </LinearLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</LinearLayout>
