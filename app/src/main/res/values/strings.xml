@@ -88,6 +88,22 @@
     <string name="title_activity_maps">MapsActivity</string>
     <string name="skip">Skip</string>
     <string name="profiletop">Profile</string>
+    <string name="aman_dhomne">Aman Dhomne</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="notifications">Notifications</string>
+    <string name="night_mode">Night Mode</string>
+    <string name="private_account">Private Account</string>
+    <string name="general">General</string>
+    <string name="cnr_no">CNR no.</string>
+    <string name="helpline">Helpline</string>
+    <string name="history">History</string>
+    <string name="personalise">Personalise</string>
+    <string name="backup">Backup</string>
+    <string name="faq">FAQ</string>
+    <string name="FAQ" />
+    <string name="about_us">About Us</string>
+    <string name="contact_us">Contact Us</string>
+    <string name="log_out">Log Out</string>
     <string-array name="genderdropdown">
         <item>Male</item>
         <item>Female</item>
