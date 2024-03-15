@@ -130,7 +130,6 @@
                                 android:layout_width="100dp"
                                 android:layout_height="0dp"
                                 android:layout_gravity="center"
-
                                 android:layout_marginStart="155dp"
                                 android:layout_marginTop="25dp"
                                 android:background="@drawable/round_back_night_mode"
