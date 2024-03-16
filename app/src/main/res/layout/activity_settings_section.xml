@@ -47,7 +47,6 @@
                     android:id="@+id/textView2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-
                     android:layout_marginTop="10dp"
                     android:text="Settings"
                     android:textColor="#000000"
@@ -132,10 +131,12 @@
                                 android:layout_gravity="center"
                                 android:layout_marginStart="155dp"
                                 android:layout_marginTop="25dp"
+                                android:layout_marginEnd="155dp"
                                 android:background="@drawable/round_back_night_mode"
                                 android:text="@string/edit_profile"
                                 android:textAllCaps="false"
                                 android:textColor="@color/primary"
+                                app:layout_constraintEnd_toEndOf="parent"
                                 app:layout_constraintStart_toStartOf="parent"
                                 app:layout_constraintTop_toTopOf="parent" />
                         </androidx.constraintlayout.widget.ConstraintLayout>
@@ -170,8 +171,9 @@
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:layout_marginStart="61dp"
-                                    android:layout_marginTop="18dp"
+                                    android:layout_marginTop="20dp"
                                     android:text="@string/night_mode"
+                                    android:textSize="18dp"
                                     android:textColor="#FFFFFF"
                                     android:textStyle="bold"
                                     app:layout_constraintStart_toStartOf="parent"
@@ -180,8 +182,8 @@
                                 <androidx.appcompat.widget.SwitchCompat
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:layout_marginStart="102dp"
-                                    android:layout_marginTop="3dp"
+                                    android:layout_marginStart="84dp"
+                                    android:layout_marginTop="4dp"
                                     android:minWidth="50dp"
                                     android:theme="@style/nightModeSwitch"
                                     app:layout_constraintStart_toEndOf="@+id/textView12"
@@ -189,8 +191,8 @@
 
                                 <ImageView
                                     android:id="@+id/nightModeIcon"
-                                    android:layout_width="40dp"
-                                    android:layout_height="40dp"
+                                    android:layout_width="50dp"
+                                    android:layout_height="50dp"
                                     android:layout_marginTop="8dp"
                                     android:padding="12dp"
                                     android:src="@drawable/baseline_dark_mode_24"
@@ -206,8 +208,8 @@
 
                                 <ImageView
                                     android:id="@+id/notificationIcon"
-                                    android:layout_width="40dp"
-                                    android:layout_height="40dp"
+                                    android:layout_width="50dp"
+                                    android:layout_height="50dp"
                                     android:layout_marginTop="18dp"
                                     android:padding="12dp"
                                     android:src="@drawable/baseline_notifications_24"
@@ -218,10 +220,11 @@
                                     android:id="@+id/textView13"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:layout_marginStart="20dp"
+                                    android:layout_marginStart="12dp"
                                     android:layout_marginTop="30dp"
                                     android:text="@string/notifications"
                                     android:textColor="#FFFFFF"
+                                    android:textSize="20dp"
                                     android:textStyle="bold"
                                     app:layout_constraintStart_toEndOf="@+id/notificationIcon"
                                     app:layout_constraintTop_toTopOf="parent" />
@@ -230,8 +233,8 @@
 
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:layout_marginStart="95dp"
-                                    android:layout_marginTop="10dp"
+                                    android:layout_marginStart="60dp"
+                                    android:layout_marginTop="16dp"
                                     android:minWidth="50dp"
                                     android:theme="@style/nightModeSwitch"
                                     app:layout_constraintStart_toEndOf="@+id/textView13"
@@ -244,8 +247,8 @@
 
                                 <ImageView
                                     android:id="@+id/privateAccountIcon"
-                                    android:layout_width="40dp"
-                                    android:layout_height="40dp"
+                                    android:layout_width="50dp"
+                                    android:layout_height="50dp"
                                     android:layout_marginTop="18dp"
                                     android:padding="12dp"
                                     android:src="@drawable/baseline_privacy_tip_24"
@@ -256,10 +259,11 @@
                                     android:id="@+id/textView14"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:layout_marginStart="20dp"
+                                    android:layout_marginStart="12dp"
                                     android:layout_marginTop="30dp"
                                     android:text="@string/private_account"
                                     android:textColor="#FFFFFF"
+                                    android:textSize="20dp"
                                     android:textStyle="bold"
                                     app:layout_constraintStart_toEndOf="@+id/privateAccountIcon"
                                     app:layout_constraintTop_toTopOf="parent" />
@@ -268,7 +272,7 @@
 
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:layout_marginStart="74dp"
+                                    android:layout_marginStart="31dp"
                                     android:layout_marginTop="10dp"
                                     android:minWidth="50dp"
                                     android:theme="@style/nightModeSwitch"
@@ -311,6 +315,7 @@
                                     android:layout_marginStart="61dp"
                                     android:layout_marginTop="18dp"
                                     android:text="@string/general"
+                                    android:textSize="20dp"
                                     android:textColor="#FFFFFF"
                                     android:textStyle="bold"
                                     app:layout_constraintStart_toStartOf="parent"
@@ -318,8 +323,8 @@
 
                                 <ImageView
                                     android:id="@+id/SettingsIcon"
-                                    android:layout_width="40dp"
-                                    android:layout_height="40dp"
+                                    android:layout_width="50dp"
+                                    android:layout_height="50dp"
                                     android:layout_marginTop="8dp"
                                     android:padding="12dp"
                                     android:src="@drawable/baseline_settings_24"
@@ -335,8 +340,8 @@
 
                                 <ImageView
                                     android:id="@+id/AppLanguageIcon"
-                                    android:layout_width="40dp"
-                                    android:layout_height="40dp"
+                                    android:layout_width="50dp"
+                                    android:layout_height="50dp"
                                     android:layout_marginTop="18dp"
                                     android:padding="12dp"
                                     android:src="@drawable/baseline_language_24"
@@ -349,7 +354,8 @@
                                     android:layout_height="wrap_content"
                                     android:layout_marginStart="20dp"
                                     android:layout_marginTop="30dp"
-                                    android:text="App language"
+                                    android:text="@string/app_language"
+                                    android:textSize="20dp"
                                     android:textColor="#FFFFFF"
                                     android:textStyle="bold"
                                     app:layout_constraintStart_toEndOf="@+id/AppLanguageIcon"
@@ -364,8 +370,8 @@
 
                                 <ImageView
                                     android:id="@+id/profileIcon"
-                                    android:layout_width="40dp"
-                                    android:layout_height="40dp"
+                                    android:layout_width="50dp"
+                                    android:layout_height="50dp"
                                     android:layout_marginTop="18dp"
                                     android:padding="12dp"
                                     android:src="@drawable/baseline_person_outline_24"
@@ -379,6 +385,7 @@
                                     android:layout_marginStart="20dp"
                                     android:layout_marginTop="30dp"
                                     android:text="@string/cnr_no"
+                                    android:textSize="20dp"
                                     android:textColor="#FFFFFF"
                                     android:textStyle="bold"
                                     app:layout_constraintStart_toEndOf="@+id/profileIcon"
@@ -393,8 +400,8 @@
 
                                 <ImageView
                                     android:id="@+id/dataAndStorageIcon"
-                                    android:layout_width="40dp"
-                                    android:layout_height="40dp"
+                                    android:layout_width="50dp"
+                                    android:layout_height="50dp"
                                     android:layout_marginTop="18dp"
                                     android:padding="12dp"
                                     android:src="@drawable/baseline_data_usage_24"
@@ -408,6 +415,7 @@
                                     android:layout_marginStart="20dp"
                                     android:layout_marginTop="30dp"
                                     android:text="Data &amp; Storage"
+                                    android:textSize="20dp"
                                     android:textColor="#FFFFFF"
                                     android:textStyle="bold"
                                     app:layout_constraintStart_toEndOf="@+id/dataAndStorageIcon"
@@ -423,8 +431,8 @@
 
                                 <ImageView
                                     android:id="@+id/addressIcon"
-                                    android:layout_width="40dp"
-                                    android:layout_height="40dp"
+                                    android:layout_width="50dp"
+                                    android:layout_height="50dp"
                                     android:layout_marginTop="18dp"
                                     android:padding="12dp"
                                     android:src="@drawable/baseline_address"
@@ -438,6 +446,7 @@
                                     android:layout_marginStart="20dp"
                                     android:layout_marginTop="29dp"
                                     android:text="Address"
+                                    android:textSize="20dp"
                                     android:textColor="#FFFFFF"
                                     android:textStyle="bold"
                                     app:layout_constraintStart_toEndOf="@+id/addressIcon"
@@ -452,8 +461,8 @@
 
                                 <ImageView
                                     android:id="@+id/helpLineIcon"
-                                    android:layout_width="40dp"
-                                    android:layout_height="40dp"
+                                    android:layout_width="50dp"
+                                    android:layout_height="50dp"
                                     android:layout_marginTop="18dp"
                                     android:padding="12dp"
                                     android:src="@drawable/baseline_local_phone_24"
@@ -467,6 +476,7 @@
                                     android:layout_marginStart="20dp"
                                     android:layout_marginTop="29dp"
                                     android:text="@string/helpline"
+                                    android:textSize="20dp"
                                     android:textColor="#FFFFFF"
                                     android:textStyle="bold"
                                     app:layout_constraintStart_toEndOf="@+id/helpLineIcon"
@@ -480,8 +490,8 @@
 
                                 <ImageView
                                     android:id="@+id/history"
-                                    android:layout_width="40dp"
-                                    android:layout_height="40dp"
+                                    android:layout_width="50dp"
+                                    android:layout_height="50dp"
                                     android:layout_marginTop="18dp"
                                     android:padding="12dp"
                                     android:src="@drawable/baseline_history_24"
@@ -495,6 +505,7 @@
                                     android:layout_marginStart="20dp"
                                     android:layout_marginTop="29dp"
                                     android:text="@string/history"
+                                    android:textSize="20dp"
                                     android:textColor="#FFFFFF"
                                     android:textStyle="bold"
                                     app:layout_constraintStart_toEndOf="@+id/history"
@@ -535,14 +546,15 @@
                                     android:layout_marginTop="18dp"
                                     android:text="@string/personalise"
                                     android:textColor="#FFFFFF"
+                                    android:textSize="20dp"
                                     android:textStyle="bold"
                                     app:layout_constraintStart_toStartOf="parent"
                                     app:layout_constraintTop_toTopOf="parent" />
 
                                 <ImageView
                                     android:id="@+id/personaliseIcon"
-                                    android:layout_width="40dp"
-                                    android:layout_height="40dp"
+                                    android:layout_width="50dp"
+                                    android:layout_height="50dp"
                                     android:layout_marginTop="8dp"
                                     android:padding="12dp"
                                     android:src="@drawable/baseline_personalise"
@@ -558,8 +570,8 @@
 
                                 <ImageView
                                     android:id="@+id/backUpIcon"
-                                    android:layout_width="40dp"
-                                    android:layout_height="40dp"
+                                    android:layout_width="50dp"
+                                    android:layout_height="50dp"
                                     android:layout_marginTop="18dp"
                                     android:padding="12dp"
                                     android:src="@drawable/baseline_backup_24"
@@ -574,6 +586,7 @@
                                     android:layout_marginTop="30dp"
                                     android:text="@string/backup"
                                     android:textColor="#FFFFFF"
+                                    android:textSize="20dp"
                                     android:textStyle="bold"
                                     app:layout_constraintStart_toEndOf="@+id/backUpIcon"
                                     app:layout_constraintTop_toTopOf="parent" />
@@ -587,8 +600,8 @@
 
                                 <ImageView
                                     android:id="@+id/FAQIcon"
-                                    android:layout_width="40dp"
-                                    android:layout_height="40dp"
+                                    android:layout_width="50dp"
+                                    android:layout_height="50dp"
                                     android:layout_marginTop="18dp"
                                     android:padding="12dp"
                                     android:src="@drawable/baseline_faq"
@@ -603,6 +616,7 @@
                                     android:layout_marginTop="30dp"
                                     android:text="@string/faq"
                                     android:textColor="#FFFFFF"
+                                    android:textSize="20dp"
                                     android:textStyle="bold"
                                     app:layout_constraintStart_toEndOf="@+id/FAQIcon"
                                     app:layout_constraintTop_toTopOf="parent" />
@@ -616,8 +630,8 @@
 
                                 <ImageView
                                     android:id="@+id/aboutUsIcon"
-                                    android:layout_width="40dp"
-                                    android:layout_height="40dp"
+                                    android:layout_width="50dp"
+                                    android:layout_height="50dp"
                                     android:layout_marginTop="18dp"
                                     android:padding="12dp"
                                     android:src="@drawable/baseline_info_24"
@@ -632,6 +646,7 @@
                                     android:layout_marginTop="30dp"
                                     android:text="@string/about_us"
                                     android:textColor="#FFFFFF"
+                                    android:textSize="20dp"
                                     android:textStyle="bold"
                                     app:layout_constraintStart_toEndOf="@+id/aboutUsIcon"
                                     app:layout_constraintTop_toTopOf="parent" />
@@ -646,8 +661,8 @@
 
                                 <ImageView
                                     android:id="@+id/contactUsIcon"
-                                    android:layout_width="40dp"
-                                    android:layout_height="40dp"
+                                    android:layout_width="50dp"
+                                    android:layout_height="50dp"
                                     android:layout_marginTop="18dp"
                                     android:padding="12dp"
                                     android:src="@drawable/baseline_connect_without_contact_24"
@@ -662,6 +677,7 @@
                                     android:layout_marginTop="29dp"
                                     android:text="@string/contact_us"
                                     android:textColor="#FFFFFF"
+                                    android:textSize="20dp"
                                     android:textStyle="bold"
                                     app:layout_constraintStart_toEndOf="@+id/contactUsIcon"
                                     app:layout_constraintTop_toTopOf="parent" />
@@ -675,8 +691,8 @@
 
                                 <ImageView
                                     android:id="@+id/deleteAccountIcon"
-                                    android:layout_width="40dp"
-                                    android:layout_height="40dp"
+                                    android:layout_width="50dp"
+                                    android:layout_height="50dp"
                                     android:layout_marginTop="18dp"
                                     android:padding="12dp"
                                     android:src="@drawable/baseline_delete_24"
@@ -691,6 +707,7 @@
                                     android:layout_marginTop="29dp"
                                     android:text="@string/helpline"
                                     android:textColor="#FFFFFF"
+                                    android:textSize="20dp"
                                     android:textStyle="bold"
                                     app:layout_constraintStart_toEndOf="@+id/deleteAccountIcon"
                                     app:layout_constraintTop_toTopOf="parent" />
@@ -703,8 +720,8 @@
 
                                 <ImageView
                                     android:id="@+id/logOutIcon"
-                                    android:layout_width="40dp"
-                                    android:layout_height="40dp"
+                                    android:layout_width="50dp"
+                                    android:layout_height="50dp"
                                     android:layout_marginTop="18dp"
                                     android:padding="12dp"
                                     android:src="@drawable/baseline_logout_24"
@@ -719,6 +736,7 @@
                                     android:layout_marginTop="29dp"
                                     android:text="@string/log_out"
                                     android:textColor="#FFFFFF"
+                                    android:textSize="20dp"
                                     android:textStyle="bold"
                                     app:layout_constraintStart_toEndOf="@+id/logOutIcon"
                                     app:layout_constraintTop_toTopOf="parent" />
