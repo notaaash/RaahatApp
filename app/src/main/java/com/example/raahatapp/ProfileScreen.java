@@ -43,7 +43,7 @@ public class ProfileScreen extends AppCompatActivity {
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_item);
         spinnerGender.setAdapter(adapter);
 
-        ImageButton btnBackToDashboard = (ImageButton) findViewById(R.id.imageButton7);
+        ImageButton btnBackToDashboard = (ImageButton) findViewById(R.id.imageButton);
         btnBackToDashboard.setOnClickListener(new View.OnClickListener() {
 
             @Override
